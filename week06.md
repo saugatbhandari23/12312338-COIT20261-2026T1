@@ -195,15 +195,16 @@ ping 192.168.20.2
 
 ### Network Topology
 
-![Default Gateway Network](./images/week6_gateway_network.png)
+![Default Gateway Network](./images/week6_task2_net_topo.png)
 
 ### Routing Table Output
 
-![Routing Tables](./images/week6_routing_tables.png)
-
-### Ping Test Between Subnets
-
-![Ping Test](./images/week6_ping.png)
+![Routing Tables](./images/week6_host_iproute.png)
+![Routing Tables](./images/week6_host2_iproute.png)
+![Routing Tables](./images/week6_host3_iproute.png)
+![Routing Tables](./images/week6_host4_iproute.png)
+![Routing Tables](./images/week6_router1_iproute.png)
+![Routing Tables](./images/week6_router2_iproute.png)
 
 ### Exported Project
 
