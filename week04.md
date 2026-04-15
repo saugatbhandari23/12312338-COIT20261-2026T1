@@ -145,23 +145,24 @@ traceroute 10.0.0.2
 
 ### OSPF Network Topology
 
-![OSPF Network](./images/OSPF-Basics-12312338-network.png)
+![OSPF Network](./images/week4_ospf_topo.png)
 
 ### Neighbor Routers Output
 
-![OSPF Neighbors](./images/OSPF-Basics-12312338-neighbors.png)
+![OSPF Neighbors](./images/week4_ospf_neighbor_routers.png)
+![OSPF Routing Table](./images/week4_ospf_neighbour_routers2.png)
 
 ### Routing Table Output
 
-![OSPF Routing Table](./images/OSPF-Basics-12312338-routes.png)
+![OSPF Routing Table](./images/week4_ospf_table.png)
 
 ### Traceroute Before Link Failure
 
-![Traceroute Before](./images/OSPF-Basics-12312338-traceroute-before.png)
+![Traceroute Before](./images/week4_traceroute.png)
 
 ### Traceroute After Link Failure
 
-![Traceroute After](./images/OSPF-Basics-12312338-traceroute-after.png)
+![Traceroute After](./images/week4_traceroute2.png)
 
 ### Exported Project
 
