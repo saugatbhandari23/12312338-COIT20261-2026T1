@@ -91,7 +91,7 @@ ip address show
 ### Basic Ping Test
 
 ```bash
-ping 10.1.1.2
+ping 192.168.38.2
 ```
 
 Stopped using:
