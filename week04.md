@@ -23,8 +23,8 @@
 
 Example subnet usage:
 
-* Subnet 1: **10.1.1.0/24**
-* Subnet 2: **10.1.2.0/24**
+* Subnet 1: **192.168.38.0/24**
+* Subnet 2: **192.168.39.0/24**
 
 ---
 
@@ -65,7 +65,7 @@ ip route show
 Ping test performed between hosts on different subnets.
 
 ```bash
-ping 10.1.2.2
+ping 192.168.39.1
 ```
 
 ---
@@ -74,15 +74,11 @@ ping 10.1.2.2
 
 ### Network Topology
 
-![Week 04 Network Topology](./images/View-Routes-12312338-network.png)
-
-### IP Addresses and Routing Tables
-
-![Routing Table Output](./images/View-Routes-12312338-routing.png)
+![Week 04 Network Topology](./images/week3_net_topo.png)
 
 ### Ping Between Subnets
 
-![Ping Between Subnets](./images/View-Routes-12312338-ping.png)
+![Ping Between Subnets](./images/week3_ping.png)
 
 ### Exported Project
 
