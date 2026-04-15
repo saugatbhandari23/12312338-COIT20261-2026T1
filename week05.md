@@ -207,7 +207,7 @@ ping 192.168.20.2
 
 ### Network Topology
 
-![VLAN Router Network](./images/week5_vlan_router_network.png)
+![VLAN Router Network](./images/week5_task2_openswitch_topo.png)
 
 ### Switch Port and VLAN Configuration
 
@@ -215,7 +215,8 @@ ping 192.168.20.2
 ovs-vsctl show
 ```
 
-![VLAN Router Ports](./images/week5_vlan_router_ports.png)
+![VLAN Router Ports](./images/week5_task2_ipaddrshow.png)
+![VLAN Router Ports](./images/week5_task2_openswitch_show.png)
 
 ### Exported Project
 
