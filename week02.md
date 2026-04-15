@@ -123,7 +123,7 @@ Observed:
 ### Ping with Options
 
 ```bash
-ping -c 3 -i 2 -s 80 10.1.1.2
+ping -c 3 -i 2 -s 80 192.168.38.2
 ```
 
 Options used:
