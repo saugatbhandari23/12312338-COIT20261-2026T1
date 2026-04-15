@@ -49,16 +49,16 @@ ping 192.168.50.2
 
 VLAN IDs used (based on student ID):
 
-* VLAN 338
-* VLAN 339
+* VLAN 38
+* VLAN 39
 
 ### Assign VLANs to Ports
 
 ```bash
-ovs-vsctl set port eth1 tag=338
-ovs-vsctl set port eth2 tag=338
-ovs-vsctl set port eth3 tag=339
-ovs-vsctl set port eth4 tag=339
+ovs-vsctl set port eth1 tag=38
+ovs-vsctl set port eth2 tag=38
+ovs-vsctl set port eth3 tag=39
+ovs-vsctl set port eth4 tag=39
 ```
 
 ---
@@ -121,8 +121,8 @@ ovs-vsctl show
 
 Two separate subnets configured:
 
-* VLAN 338 → **192.168.10.0/24**
-* VLAN 339 → **192.168.20.0/24**
+* VLAN 38 → **192.168.10.0/24**
+* VLAN 39 → **192.168.20.0/24**
 
 ### Host Configuration
 
@@ -138,10 +138,10 @@ Two separate subnets configured:
 ### Access Ports
 
 ```bash
-ovs-vsctl set port eth1 tag=338
-ovs-vsctl set port eth2 tag=338
-ovs-vsctl set port eth3 tag=339
-ovs-vsctl set port eth4 tag=339
+ovs-vsctl set port eth1 tag=38
+ovs-vsctl set port eth2 tag=38
+ovs-vsctl set port eth3 tag=39
+ovs-vsctl set port eth4 tag=39
 ```
 
 ### Trunk Port (eth0)
@@ -157,8 +157,8 @@ ovs-vsctl set port eth0 trunks=[]
 ### Create VLAN Sub-Interfaces
 
 ```bash
-ip link add link eth0 name eth0.338 type vlan id 338
-ip link add link eth0 name eth0.339 type vlan id 339
+ip link add link eth0 name eth0.38 type vlan id 38
+ip link add link eth0 name eth0.39 type vlan id 39
 ```
 
 ---
@@ -166,8 +166,8 @@ ip link add link eth0 name eth0.339 type vlan id 339
 ### Assign IP Addresses
 
 ```bash
-ip address add 192.168.10.1/24 dev eth0.338
-ip address add 192.168.20.1/24 dev eth0.339
+ip address add 192.168.10.1/24 dev eth0.38
+ip address add 192.168.20.1/24 dev eth0.39
 ```
 
 ---
@@ -176,8 +176,8 @@ ip address add 192.168.20.1/24 dev eth0.339
 
 ```bash
 ip link set eth0 up
-ip link set eth0.338 up
-ip link set eth0.339 up
+ip link set eth0.38 up
+ip link set eth0.39 up
 ```
 
 ---
