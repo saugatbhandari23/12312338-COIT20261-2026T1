@@ -68,17 +68,17 @@ ip address show
 
 ### Network Topology
 
-![Week 02 Network Topology](./images/Setting-IP-12312338-network.png)
+![Week 02 Network Topology](./images/week2-net-topo.png)
 
 ### Host IP Address Verification
 
-![Host A IP Address](./images/Setting-IP-12312338-host1.png)
+![Host A IP Address](./images/week2_host1_ip.png)
 
-![Host B IP Address](./images/Setting-IP-12312338-host2.png)
+![Host B IP Address](./images/week2_host2_ip.png)
 
-![Host C IP Address](./images/Setting-IP-12312338-host3.png)
+![Host C IP Address](./images/week2_host3_ip.png)
 
-![Host D IP Address](./images/Setting-IP-12312338-host4.png)
+![Host D IP Address](./images/week2_host4_ip.png)
 
 ### Exported Project
 
@@ -138,15 +138,15 @@ Options used:
 
 ### Ping Without Options
 
-![Ping Basic Test](./images/Ping-Basics-12312338-simple.png)
+![Ping Basic Test](./images/week2_pingwto.png)
 
 ### Ping to Wrong IP Address
 
-![Ping Error Test](./images/Ping-Basics-12312338-error.png)
+![Ping Error Test](./images/week2_wrong_ping.png)
 
 ### Ping with Options
 
-![Ping Options Test](./images/Ping-Basics-12312338-options.png)
+![Ping Options Test](./images/week2_pingwo.png)
 
 ---
 
