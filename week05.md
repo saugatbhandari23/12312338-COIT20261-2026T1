@@ -1,12 +1,12 @@
 
-# 📓 Week 05 Journal – VLANs (Open vSwitch & Linux Router)
+# Week 05 Journal – VLANs (Open vSwitch & Linux Router)
 
-## 🧪 Task 1: Setup VLANs on Switch
+## Task 1: Setup VLANs on Switch
 
-### 🎯 Aim
+### Aim
 To learn how to configure VLANs on a managed switch using Open vSwitch in a virtual network environment.
 
-### 🛠️ Activities Completed
+### Activities Completed
 
 1. Created a new project named:  
    **Vlan-Basics-<studentid>**
@@ -43,19 +43,20 @@ To learn how to configure VLANs on a managed switch using Open vSwitch in a virt
 Tested connectivity again between hosts
 Observed that hosts in different VLANs could NOT communicate
 Checked ARP tables to confirm separation
-📸 Outputs
+ Outputs
 Exported project file:
 Vlan-Basics-<studentid>.gns3project
 Network topology screenshot:
 Vlan-Basics-<studentid>-network.png
 Switch port & VLAN tagging screenshot:
 Vlan-Basics-<studentid>-ports.png
-🌐 Task 2: Setup VLANs on Router
-🎯 Aim
+   
+## Task 2: Setup VLANs on Router
+### Aim
 
 To configure VLAN routing using a Linux router and enable communication between different VLANs.
 
-🛠️ Activities Completed
+### Activities Completed
 Copied previous project to:
 Vlan-Router-<studentid>
 Added a Linux Router node:
