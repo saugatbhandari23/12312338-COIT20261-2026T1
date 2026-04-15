@@ -1,100 +1,222 @@
+# Week 05 – COIT20261 Portfolio  
 
-# Week 05 Journal – VLANs (Open vSwitch & Linux Router)
+## Student Information  
 
-## Task 1: Setup VLANs on Switch
+* **Name:** Saugat Bhandari  
+* **Student ID:** 12312338  
 
-### Aim
-To learn how to configure VLANs on a managed switch using Open vSwitch in a virtual network environment.
+---
 
-### Activities Completed
+# Task 1 – VLAN Configuration on Switch  
 
-1. Created a new project named:  
-   **Vlan-Basics-<studentid>**
+## Project Setup  
 
-2. Added network components:
-   - 4 × Linux Hosts
-   - 1 × Open vSwitch
+* Project name: **Vlan-Basics-12312338**  
+* Added:  
+  * 4 × Linux Host nodes  
+  * 1 × OpenvSwitch  
+* Connected all hosts to switch ports:  
+  * Host1 → eth1  
+  * Host2 → eth2  
+  * Host3 → eth3  
+  * Host4 → eth4  
+* Left **eth0 unused** (reserved for next task).  
+* Assigned all hosts to the **same subnet**.  
 
-3. Connected hosts to the switch:
-   - Hosts connected to ports starting from **eth1 to eth4**
-   - **eth0 left unused** for future tasks
+### Example IP Configuration  
 
-4. Configured IP addressing:
-   - All hosts were assigned IP addresses in the **same subnet**
+* Subnet: **192.168.50.0/24**  
+* Host1: 192.168.50.1  
+* Host2: 192.168.50.2  
+* Host3: 192.168.50.3  
+* Host4: 192.168.50.4  
 
-5. Started all nodes and verified basic connectivity:
-   - Used ping tests between all hosts
-   - Confirmed full connectivity before VLAN configuration
+---
 
-6. Configured VLANs on Open vSwitch:
-   - Split hosts into two VLAN groups:
-     - VLAN A: Host 1 & Host 2
-     - VLAN B: Host 3 & Host 4
-   - VLAN IDs were based on student ID requirements
+## Initial Connectivity Test  
 
-   Example commands used:
-   ```bash
-   ovs-vsctl set port eth1 tag=<VLAN_ID_1>
-   ovs-vsctl set port eth2 tag=<VLAN_ID_1>
-   ovs-vsctl set port eth3 tag=<VLAN_ID_2>
-   ovs-vsctl set port eth4 tag=<VLAN_ID_2>
+Ping test performed between all hosts:  
 
-   7. Verified VLAN configuration:
-Tested connectivity again between hosts
-Observed that hosts in different VLANs could NOT communicate
-Checked ARP tables to confirm separation
- Outputs
-Exported project file:
-Vlan-Basics-<studentid>.gns3project
-Network topology screenshot:
-Vlan-Basics-<studentid>-network.png
-Switch port & VLAN tagging screenshot:
-Vlan-Basics-<studentid>-ports.png
-   
-## Task 2: Setup VLANs on Router
-### Aim
+```bash
+ping 192.168.50.2
+````
 
-To configure VLAN routing using a Linux router and enable communication between different VLANs.
+* All hosts were able to communicate successfully before VLAN configuration.
 
-### Activities Completed
-Copied previous project to:
-Vlan-Router-<studentid>
-Added a Linux Router node:
-Connected router to switch via eth0
-Configured IP addressing:
-Hosts split into two different subnets
-Each subnet mapped to a separate VLAN
-Started all nodes and tested base connectivity.
-Configured VLANs on switch (same as Task 1):
-Assigned VLAN tags to access ports
+---
 
-Configured trunk port on switch:
+## VLAN Configuration (OpenvSwitch)
 
-Enabled multiple VLAN traffic on eth0
+VLAN IDs used (based on student ID):
 
-Example command:
+* VLAN 338
+* VLAN 339
 
-ovs-vsctl set port eth0 trunks=10,20
+### Assign VLANs to Ports
 
-OR allow all VLANs:
+```bash
+ovs-vsctl set port eth1 tag=338
+ovs-vsctl set port eth2 tag=338
+ovs-vsctl set port eth3 tag=339
+ovs-vsctl set port eth4 tag=339
+```
 
+---
+
+## Connectivity After VLAN Setup
+
+* Hosts in **same VLAN** → communication successful
+* Hosts in **different VLANs** → communication failed
+
+This confirms VLAN isolation is working correctly.
+
+---
+
+## ARP Table Check
+
+Command used:
+
+```bash
+arp -n
+```
+
+* ARP entries only visible for hosts within the same VLAN.
+
+---
+
+## Task 1 – Evidence
+
+### Network Topology
+
+![VLAN Basics Network](./images/week5_vlan_network.png)
+
+### Switch Port Configuration
+
+```bash
+ovs-vsctl show
+```
+
+![VLAN Ports](./images/week5_vlan_ports.png)
+
+### Exported Project
+
+* `Vlan-Basics-12312338.gns3project`
+
+---
+
+# Task 2 – VLAN Configuration with Router
+
+## Project Setup
+
+* Project name: **Vlan-Router-12312338**
+* Copied from previous VLAN Basics project
+* Added:
+
+  * 1 × Linux Router
+* Connected router to switch using **eth0 (trunk port)**
+
+---
+
+## IP Addressing
+
+Two separate subnets configured:
+
+* VLAN 338 → **192.168.10.0/24**
+* VLAN 339 → **192.168.20.0/24**
+
+### Host Configuration
+
+* Host1: 192.168.10.2
+* Host2: 192.168.10.3
+* Host3: 192.168.20.2
+* Host4: 192.168.20.3
+
+---
+
+## Switch Configuration
+
+### Access Ports
+
+```bash
+ovs-vsctl set port eth1 tag=338
+ovs-vsctl set port eth2 tag=338
+ovs-vsctl set port eth3 tag=339
+ovs-vsctl set port eth4 tag=339
+```
+
+### Trunk Port (eth0)
+
+```bash
 ovs-vsctl set port eth0 trunks=[]
+```
 
-Configured VLAN sub-interfaces on Linux router:
+---
 
-Created VLAN interfaces:
-ip link add link eth0 name eth0.10 type vlan id 10
-ip link add link eth0 name eth0.20 type vlan id 20
-Assigned IP addresses:
-ip address add <IP_SUBNET_1> dev eth0.10
-ip address add <IP_SUBNET_2> dev eth0.20
-Verified full connectivity:
-All hosts could communicate through router
-Confirmed inter-VLAN routing worked correctly
-📸 Outputs
-Exported project file:
-Vlan-Router-<studentid>.gns3project
-Network topology screenshot:
-Vlan-Router-<studentid>-network.png
-Switch port & VLAN tagging screenshot:
-Vlan-Router-<studentid>-ports.png
+## Router VLAN Configuration
+
+### Create VLAN Sub-Interfaces
+
+```bash
+ip link add link eth0 name eth0.338 type vlan id 338
+ip link add link eth0 name eth0.339 type vlan id 339
+```
+
+---
+
+### Assign IP Addresses
+
+```bash
+ip address add 192.168.10.1/24 dev eth0.338
+ip address add 192.168.20.1/24 dev eth0.339
+```
+
+---
+
+### Enable Interfaces
+
+```bash
+ip link set eth0 up
+ip link set eth0.338 up
+ip link set eth0.339 up
+```
+
+---
+
+## Connectivity Testing
+
+### Ping Between VLANs
+
+```bash
+ping 192.168.20.2
+```
+
+* All hosts successfully communicated across VLANs via router.
+
+---
+
+## Key Observations
+
+* VLANs isolate traffic at Layer 2.
+* Devices in different VLANs cannot communicate without a router.
+* Trunk ports carry traffic from multiple VLANs.
+* Router sub-interfaces allow inter-VLAN communication.
+
+---
+
+## Task 2 – Evidence
+
+### Network Topology
+
+![VLAN Router Network](./images/week5_vlan_router_network.png)
+
+### Switch Port and VLAN Configuration
+
+```bash
+ovs-vsctl show
+```
+
+![VLAN Router Ports](./images/week5_vlan_router_ports.png)
+
+### Exported Project
+
+* `Vlan-Router-12312338.gns3project`
