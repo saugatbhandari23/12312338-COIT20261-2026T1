@@ -82,28 +82,11 @@ ip neigh show
 
 ---
 
-## Observations
-
-* ARP maps IP addresses to MAC (hardware) addresses.
-* Entries are added when communication occurs.
-* Entries may expire over time if inactive.
-* ARP operates automatically in the background.
-
----
-
 ## Task 1 – Evidence
-
-### ARP Table (Initial)
-
-![ARP Table Initial](./images/week6_arp_table1.png)
-
-### ARP Table After Ping
-
-![ARP Table After Ping](./images/week6_arp_table2.png)
 
 ### ARP Table After Multiple Communications
 
-![ARP Table Final](./images/week6_arp_table3.png)
+![ARP Table Final](./images/week6_ipneighshow.png)
 
 ---
 
