@@ -149,7 +149,7 @@ traceroute 10.0.0.2
 
 ### Neighbor Routers Output
 
-![OSPF Neighbors](./images/week4_ospf_neighbor_routers.png)
+![OSPF Neighbors](./images/week4_ospf_neigbor_routers.png)
 ![OSPF Routing Table](./images/week4_ospf_neighbour_routers2.png)
 
 ### Routing Table Output
@@ -158,7 +158,7 @@ traceroute 10.0.0.2
 
 ### Traceroute Before Link Failure
 
-![Traceroute Before](./images/week4_traceroute.png)
+![Traceroute Before](./images/week4_traceroute1.png)
 
 ### Traceroute After Link Failure
 
