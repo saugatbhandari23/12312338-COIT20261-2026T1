@@ -1,16 +1,16 @@
 
-# 📓 Week 06 Practical Journal – ARP & Default Gateways
+# Week 06 Practical Journal – ARP & Default Gateways
 
 ---
 
-# 🧪 Task 1: ARP (Address Resolution Protocol)
+# Task 1: ARP (Address Resolution Protocol)
 
-## 🎯 Aim
+## Aim
 To understand how ARP maps IP addresses to MAC (hardware) addresses in a LAN.
 
 ---
 
-## 🛠️ Steps Performed
+##  Steps Performed
 
 1. Opened project:
    - `Setting-IP-<studentid>`
@@ -35,7 +35,7 @@ Checked ARP table again on Host A:
 ARP entry updated based on new communication
 Table reflects learned MAC addresses dynamically
 Repeated tests between different hosts to observe ARP updates over time
-📸 Screenshots Taken (Task 1)
+ Screenshots Taken (Task 1)
 ARP table BEFORE ping:
 ARP-Basics-<studentid>-HostA-Table1.png
 ARP table AFTER Host A → Host B ping:
@@ -45,12 +45,12 @@ ARP-Basics-<studentid>-HostA-Table3.png
 
 (Optional: ARP tables from other hosts)
 
-🧪 Task 2: Default Gateways & Routing
-🎯 Aim
+## Task 2: Default Gateways & Routing
+### Aim
 
 To configure default gateways and enable routing between multiple subnets using Linux routers.
 
-🛠️ Steps Performed
+### Steps Performed
 Created project:
 Default-Gateway-<studentid>
 Built network topology:
