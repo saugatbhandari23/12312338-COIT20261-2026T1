@@ -66,7 +66,7 @@ ip addr show
 ## Required Outputs
 
 * Exported project file:
-  `GNS3-Intro-[StudentID].gns3project`
+  `GNS3-Intro-12312338.gns3project`
 
 * Screenshot of network topology:
   `GNS3-Intro-12312338-network.png`
