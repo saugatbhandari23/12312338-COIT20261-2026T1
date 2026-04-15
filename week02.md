@@ -6,7 +6,6 @@
 * **Name:** Saugat Bhandari
 * **Student ID:** 12312338
 * **Project Name:** Setting-IP-12312338
-* **Network Used:** 10.1.1.0/24
 
 ---
 
@@ -40,7 +39,7 @@ Configuration:
 ```bash
 auto eth0
 iface eth0 inet static
-   address 10.1.1.3
+   address 192.168.38.3
    netmask 255.255.255.0
 ```
 
@@ -54,7 +53,7 @@ ifup eth0
 #### Method 4 – Using `ip` Command
 
 ```bash
-ip address add 10.1.1.4/24 dev eth0
+ip address add 192.168.38.4/24 dev eth0
 ```
 
 Verification command:
