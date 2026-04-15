@@ -66,15 +66,15 @@ ip addr show
 ## Required Outputs
 
 * Exported project file:
-  `GNS3-Intro-12312338.gns3project`
+  `GNS3-Intro-12312338.gns3project`   
   ![Week 1 Task 1](./images/GNS3-Intro-12312338)
 
 * Screenshot of network topology:
-  `GNS3-Intro-12312338-network.png`
+  `GNS3-Intro-12312338-network.png`   
   ![Week 1 Task 1](./images/week1_gns3_intro.png)
 
 * Screenshot of console showing IP address:
-  `GNS3-Intro-12312338-ipaddress.png`
+  `GNS3-Intro-12312338-ipaddress.png`   
   ![Week 3 task 1](./images/week1_gns3_addrshow.png)
 
 ---
