@@ -88,7 +88,7 @@ arp -n
 
 ### Network Topology
 
-![VLAN Basics Network](./images/week5_vlan_network.png)
+![VLAN Basics Network](./images/week5_openswitch_topo.png)
 
 ### Switch Port Configuration
 
@@ -96,7 +96,7 @@ arp -n
 ovs-vsctl show
 ```
 
-![VLAN Ports](./images/week5_vlan_ports.png)
+![VLAN Ports](./images/week5_openswitch_show.png)
 
 ### Exported Project
 
