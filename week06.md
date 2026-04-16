@@ -199,12 +199,15 @@ ping 192.168.20.2
 
 ### Routing Table Output
 
-![Routing Tables](./images/week6_host1_iproute.png)
-![Routing Tables](./images/week6_host2_iproute.png)
-![Routing Tables](./images/week6_host3_iproute.png)
-![Routing Tables](./images/week6_host4_iproute.png)
-![Routing Tables](./images/week6_router1_iproute.png)
-![Routing Tables](./images/week6_router2_iproute.png)
+![Routing Tables](./images/week6_task2_host1_iproute.png)
+![Routing Tables](./images/week6_task2_host2_iproute.png)
+![Routing Tables](./images/week6_task2_host3_iproute.png)
+![Routing Tables](./images/week6_task2_host4_iproute.png)
+![Routing Tables](./images/week6_task2_router1_iproute.png)
+![Routing Tables](./images/week6_task2_router2_iproute.png)
+
+*** Ping ***
+![Routing Tables](./images/week6_task2_ping.png)    
 
 ### Exported Project
 
