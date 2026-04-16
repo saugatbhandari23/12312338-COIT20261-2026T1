@@ -83,6 +83,7 @@ ping 192.168.39.1
 ### Exported Project
 
 * `View-Routes-12312338.gns3project`
+  [Project File](./images/View-Routes-12312338.gns3project)
 
 ---
 
@@ -167,6 +168,7 @@ traceroute 10.0.0.2
 ### Exported Project
 
 * `OSPF-Basics-12312338.gns3project`
+  [Project File](./images/OSPF-Basics-12312338.gns3project)
 
 ---
 
