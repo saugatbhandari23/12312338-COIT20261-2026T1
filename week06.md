@@ -206,7 +206,7 @@ ping 192.168.2.11
 ![Routing Tables](./images/week6_task2_router1_iproute.png)
 ![Routing Tables](./images/week6_task2_router2_iproute.png)
 
-*** Ping ***
+### Ping   
 ![Routing Tables](./images/week6_task2_ping.png)    
 
 ### Exported Project
