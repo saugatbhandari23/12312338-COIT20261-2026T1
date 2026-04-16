@@ -199,7 +199,7 @@ ping 192.168.20.2
 
 ### Routing Table Output
 
-![Routing Tables](./images/week6_host_iproute.png)
+![Routing Tables](./images/week6_host1_iproute.png)
 ![Routing Tables](./images/week6_host2_iproute.png)
 ![Routing Tables](./images/week6_host3_iproute.png)
 ![Routing Tables](./images/week6_host4_iproute.png)
