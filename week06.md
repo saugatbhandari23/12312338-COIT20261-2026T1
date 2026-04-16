@@ -84,6 +84,10 @@ ip neigh show
 
 ## Task 1 – Evidence
 
+### ARP Table before Communications
+
+![ARP Table First](./images/week6_before_conn.png)
+
 ### ARP Table After Multiple Communications
 
 ![ARP Table Final](./images/week6_ipneighshow.png)
