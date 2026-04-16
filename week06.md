@@ -175,7 +175,7 @@ ip route show
 ### Ping Between Subnets
 
 ```bash
-ping 192.168.20.2
+ping 192.168.2.11
 ```
 
 * Successful communication confirmed between hosts on different subnets
