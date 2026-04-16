@@ -83,6 +83,7 @@ ip address show
 ### Exported Project
 
 * `Setting-IP-12312338.gns3project`
+  [Project File](./images/Setting-IP-12312338.gns3project)
 
 ---
 
