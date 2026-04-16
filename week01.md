@@ -67,7 +67,7 @@ ip addr show
 
 * Exported project file:
   `GNS3-Intro-12312338.gns3project`   
-  ![ProjectFile](./images/GNS3-Intro-12312338.gns3project)
+  [ProjectFile](./images/GNS3-Intro-12312338.gns3project)
 
 * Screenshot of network topology:
   `GNS3-Intro-12312338-network.png`   
